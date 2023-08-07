@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+  color: white
+};
+
+
+.hide-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
