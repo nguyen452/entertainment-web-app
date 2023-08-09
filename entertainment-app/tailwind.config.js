@@ -2,15 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
-    colors: {
-      darkBlue: '#161D2F',
-      darkerBlue: '#10141E',
-      transparentDarkerBlue: 'rgba(16, 20, 30, 0.7)',
-      transparentWhite: 'rgba(255, 255, 255, 0.3)',
-      semiTransparentWhite:'rgba(255, 255, 255, 0.75)'
 
-    },
     extend: {
+      colors: {
+        darkBlue: '#161D2F',
+        darkerBlue: '#10141E',
+        transparentDarkerBlue: 'rgba(16, 20, 30, 0.7)',
+        transparentWhite: 'rgba(255, 255, 255, 0.3)',
+        semiTransparentWhite:'rgba(255, 255, 255, 0.75)',
+
+      },
       height: {
         "30px" : "30px",
         "48px" : "48px",
@@ -31,7 +32,7 @@ module.exports = {
         "280px": "280px"
       },
       spacing: {
-        "168px": "168px",
+        "145px": "145px",
         "280px": "280px",
         "400px": "400px"
       },

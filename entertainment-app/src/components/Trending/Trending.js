@@ -6,7 +6,7 @@ import trendingData from "./trendingData";
 const Trending = () => {
     return (
         <section id="trend-container" className="flex-col w-1240px ">
-            <h1 className=" text-32px font-light tracking-wide">Trending</h1>
+            <h1 className=" text-32px font-light tracking-wide my-6">Trending</h1>
             <div id="trend-thumbnail-container" className="flex overflow-x-auto hide-scrollbar">
                 {trendingData.map((item) => {
                     return (

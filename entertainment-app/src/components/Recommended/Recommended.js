@@ -5,7 +5,7 @@ import RecommendationThumbnail from "./RecommendationThumbnail"
 const Recommended = () => {
     return (
         <section id="recommendation">
-            <h1 className=" text-32px font-light tracking-wide">Recommended for you</h1>
+            <h1 className=" text-32px font-light tracking-wide mb-6">Recommended for you</h1>
             <div id="recommendation-thumbnail-container" className=" flex flex-wrap max-w-1240px" >
                 {recommendationData.map((item) => {
                     return (
@@ -21,7 +21,7 @@ const Recommended = () => {
                         isBookmarked={item.isBookmarked}
                          />
                     )
-                })};
+                })}
 
 
             </div>
