@@ -16,6 +16,7 @@ body {
   -ms-overflow-style: none;  /* For Internet Explorer and Edge */
 }
 
+
 ::-webkit-scrollbar {
-  width: 0;
+  width: 0
 }

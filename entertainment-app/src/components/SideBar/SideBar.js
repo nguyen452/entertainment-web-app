@@ -1,5 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as NavHomeIcon } from '../../nav-icon/icon-nav-home.svg';
+import { ReactComponent as NavMoviesIcon } from '../../nav-icon/icon-nav-movies.svg';
+import { ReactComponent as NavTVIcon } from '../../nav-icon/icon-nav-tv-series.svg';
+import { ReactComponent as NavBookmarkIcon } from '../../nav-icon/icon-nav-bookmark.svg';
+
+
 
 // Stateless functional component
 const SideBar = () => {
@@ -8,20 +14,30 @@ const SideBar = () => {
             <div id='logo-links-container' className='mt-6 flex flex-col w-8 h-300px justify-between items-center'>
                 <img className='w-8 h-7' src="/assets/logo.svg" alt="Logo" />
                 <div id='nav-link' className='w-5 h-200px flex flex-col items-center justify-between'>
-                    <NavLink to="/" activeClassName="active">
-                        <img className=" w-8 h-6 "  src="/assets/icon-nav-home.svg" alt="Home" />
+
+                    <NavLink to="/" className={({isActive}) => {
+                        return isActive? "text-white hover:text-red" : "text-greyBlue hover:text-red"
+                    }}>
+                        <NavHomeIcon />
                     </NavLink>
 
-                    <NavLink to="/movie" activeClassName="active">
-                        <img src="/assets/icon-nav-movies.svg" alt="Movie" />
+
+                    <NavLink to="/movies" className={({isActive}) => {
+                        return isActive? "text-white hover:text-red" : "text-greyBlue hover:text-red"
+                    }}>
+                        <NavMoviesIcon />
                     </NavLink>
 
-                    <NavLink to="/tvseries" activeClassName="active">
-                        <img src="/assets/icon-nav-tv-series.svg" alt="TV Series" />
+                    <NavLink to="/tvseries"className={({isActive}) => {
+                        return isActive? "text-white hover:text-red" : "text-greyBlue hover:text-red"
+                    }}>
+                        <NavTVIcon />
                     </NavLink>
 
-                    <NavLink to="/bookmarked" activeClassName="active">
-                        <img src="/assets/icon-nav-bookmark.svg" alt="Bookmark" />
+                    <NavLink to="/bookmarked" className={({isActive}) => {
+                        return isActive? "text-white hover:text-red" : "text-greyBlue hover:text-red"
+                    }}>
+                        <NavBookmarkIcon />
                     </NavLink>
                 </div>
             </div>

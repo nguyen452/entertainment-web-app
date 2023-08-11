@@ -10,6 +10,8 @@ module.exports = {
         transparentDarkerBlue: 'rgba(16, 20, 30, 0.7)',
         transparentWhite: 'rgba(255, 255, 255, 0.3)',
         semiTransparentWhite:'rgba(255, 255, 255, 0.75)',
+        greyBlue: "#5A698F",
+        red: "#FC4747"
 
       },
       height: {
@@ -33,6 +35,7 @@ module.exports = {
       },
       spacing: {
         "145px": "145px",
+        "168px": "168px",
         "280px": "280px",
         "400px": "400px"
       },
@@ -40,6 +43,7 @@ module.exports = {
         '20px': '20px'
       },
       fontSize: {
+        "24px": "24px",
         "32px": "32px"
       },
     },
